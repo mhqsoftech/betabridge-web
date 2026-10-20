@@ -213,8 +213,30 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Featured badges */}
+        <div className="pt-8 mt-10 border-t border-white/10 flex flex-wrap items-center justify-center sm:justify-start gap-3">
+          <a
+            href="https://thelaunchfeed.com/launch/betabridge.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Featured on The Launch Feed"
+            className="inline-block rounded-md overflow-hidden border border-white/10 hover:border-white/25 transition-colors"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://thelaunchfeed.com/api/badge/featured?theme=light&site=betabridge.vercel.app"
+              alt="Featured on The Launch Feed"
+              width={220}
+              height={48}
+              loading="lazy"
+              decoding="async"
+              className="block"
+            />
+          </a>
+        </div>
+
         {/* Bottom bar */}
-        <div className="pt-8 mt-10 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <div className="pt-6 mt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} BetaBridge. All rights reserved.</p>
           <p className="text-center sm:text-right max-w-md">
             Independent developer platform. Not affiliated with Google LLC. Android and Google Play are trademarks of Google LLC.
